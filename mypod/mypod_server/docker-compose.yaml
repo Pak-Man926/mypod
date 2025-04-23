@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_DB: mypod
-      POSTGRES_PASSWORD: "sxsIutZKEZf8CnWlZS12nEqRaHsCnfFc"
+      POSTGRES_PASSWORD: "ILAlGFED1FXnn7fS_jwops-fxdk8oLrY"
     volumes:
       - mypod_data:/var/lib/postgresql/data
 
@@ -15,7 +15,7 @@ services:
     image: redis:6.2.6
     ports:
       - "8091:6379"
-    command: redis-server --requirepass "RrLpjahcXk7ICS8eB_NegyVfrxWhYZ4T"
+    command: redis-server --requirepass "qLjTdc4XyenK0Pw7sok0KNBOfa2y5ZVE"
     environment:
       - REDIS_REPLICATION_MODE=master
 
@@ -27,7 +27,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_DB: mypod_test
-      POSTGRES_PASSWORD: "uhUmDIqvnjelXFxbRs20AV1UQq_8w0zP"
+      POSTGRES_PASSWORD: "bvJ-BJwaSbYVrTfRfQazBRwB_RKVEd33"
     volumes:
       - mypod_test_data:/var/lib/postgresql/data
 
@@ -35,7 +35,7 @@ services:
     image: redis:6.2.6
     ports:
       - "9091:6379"
-    command: redis-server --requirepass "N1XZByXenuBBXg3Yiw9rbrDspV0N91lJ"
+    command: redis-server --requirepass "yMHPSnicShRXhQnaLSa_qg1rZIpfl6oy"
     environment:
       - REDIS_REPLICATION_MODE=master
 
